@@ -68,11 +68,9 @@ space_manager = {
     'space': 5
 }
 
-
 def get_space(key, val):
     val = str(val)
     return space_manager['space'] + space_manager[key] - len(val)
-
 
 def print_helper(key, val, restriction):
     val = str(val)
@@ -87,7 +85,6 @@ def print_helper(key, val, restriction):
             print(val, (get_space(key, val) + 1) * " ", end="", sep="")
     else:
         print(val, get_space(key, val) * " ", end="", sep="")
-
 
 print(f"\nScraped the {page}th page of submissions and found {len(submissions)} submissions:\n")
 
